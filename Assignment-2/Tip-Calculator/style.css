@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container {
+    border: 5px solid grey;
+    background-color: coral;
+    min-height: 52vh;
+    width: 580px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande';
+    margin-top: 13px;
+}
+
+.billInput,
+.ran {
+    margin: auto 16px;
+    position: relative;
+    margin-top: 26px;
+    display: flex;
+}
+
+.currency {
+    background-color: rgb(228, 235, 241);
+    padding: 10px 20px;
+    display: inline-block;
+}
+
+.billInput input {
+    width: 85%;
+    padding: 0 5px;
+    border: 1px solid rgb(228, 235, 241);
+
+}
+
+.billInput label {
+    margin: 33px 19px 0px 0px;
+}
+
+h3 {
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande';
+    margin-top: 13px;
+}
+
+.rangePercent {
+    padding: 12px 16px;
+    border-radius: 5px;
+    background-color: rgb(228, 233, 238);
+    display: inline-block;
+    margin: 23px 5px;
+}
+
+.result-prim {
+    display: flex;
+    flex-direction: row;
+    flex-direction: column;
+}
+
+.tip {
+    width: 85%;
+    background-color: rgb(237, 242, 246);
+    display: flex;
+    margin: 14px auto;
+    padding: 8px;
+}
+
+.tip span {
+    margin: auto 8px;
+}
+
+.amt {
+    width: 85%;
+    background-color: rgb(237, 242, 246);
+    display: flex;
+    margin: 14px auto;
+    padding: 8px;
+}
+
+.amt span {
+    margin: auto 8px;
+}

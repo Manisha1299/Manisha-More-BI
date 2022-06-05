@@ -1,0 +1,79 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(249, 107, 154);
+}
+
+.randomQuote {
+    position: relative;
+}
+
+i {
+    background-color: #ddfffa;
+    width: 20px;
+    height: 10px;
+}
+
+header {
+    text-align: center;
+    color: #fff;
+    padding: 10px 0;
+    margin-top: 22px;
+    font-size: 25px;
+}
+
+.quotesOutput {
+    text-align: center;
+    background: #ddfffa;
+    padding: 20px;
+    height: 190px;
+    width: 400px;
+    margin-top: 50px;
+    margin-left: 37%;
+    justify-content: center;
+    border-radius: 22px;
+    border: 2px solid crimson;
+    overflow: hidden;
+}
+
+button {
+    display: block;
+    width: 120px;
+    height: 50px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #fff;
+    color: black;
+    border: transparent;
+    margin-left: 710px;
+    cursor: pointer;
+    position: fixed;
+    margin-top: 43px;
+}
+
+button:hover {
+    background-color: crimson;
+    color: white;
+    border: 2px solid white;
+}
+
+p#generatedQuote {
+    font-size: 22px;
+    font-weight: 475;
+    background: #ddfffa;
+    padding-top: 8px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p#AuthorName {
+    border-top: 2px solid rgb(110, 109, 109);
+    font-size: 18px;
+    font-weight: 300;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: #ddfffa;
+    text-align: left;
+    margin-top: 35px;
+    position: sticky;
+    margin-left: 49%;
+}
