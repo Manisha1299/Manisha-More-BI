@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     font-family: 'Poppins', sans-serif;
-    background-color: rgb(249, 107, 154);
+    background-color: teal;
 }
 
 .randomQuote {
@@ -10,7 +10,7 @@
 }
 
 i {
-    background-color: #ddfffa;
+    background-color: #d3faf4;
     width: 20px;
     height: 10px;
 }

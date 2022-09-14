@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>ID Card Genrator</title>
+  </head>
+  <body>
+    <div class="hero-container">
+      <header class="hero-navbar">
+        <div class="hero-navbar-sec">ID Card Generator</div>
+      </header>
+      <div class="hero-container-sec">
+        <div class="hero-flex">
+          <div class="section-container">
+            <div class="subtitle-section">
+              <p>Enter Student Details</p>
+            </div>
+            <form onsubmit="return false" class="form-box">
+              <div class="form-prim">
+                <label class="form-label"> Enter Name: </label>
+
+                <input class="form-input" type="text" id="name" />
+              </div>
+              <div class="form-sec">
+                <label class="form-label"> Enter College Name: </label>
+                <input class="form-input" type="text" id="collegeName" />
+              </div>
+              <div class="form-opt">
+                <label class="form-label"> Enter Location: </label>
+                <input class="form-input" type="text" id="location" />
+              </div>
+              <div>
+                <!-- <p><label for="file" style="cursor: pointer;">Enter Student's Picture</label></p> -->
+                <p style="font-size: 14px; font-weight: 600; margin: 7px auto">
+                  Enter Student's Picture
+                </p>
+                <p>
+                  <input
+                    type="file"
+                    accept="image/*"
+                    name="image"
+                    id="file"
+                    onchange="loadFile(event)"
+                  />
+                </p>
+              </div>
+
+              <div class="generate-btn">
+                <button class="btn-generate" onclick="generateCard()">
+                  Generate Card
+                </button>
+              </div>
+            </form>
+          </div>
+          <div class="section-container section-right col-6">
+            <div class="id-card-container" id="collegeCard">
+              <div
+                class="generate-head"
+                style="
+                  text-align: center;
+                  font-weight: 600;
+                  font-size: 18px;
+                  margin: 0;
+                "
+              >
+                Generated ID Card
+              </div>
+              <div class="card-container">
+                <div class="card-wrapper">
+                  <div class="user-card">
+                    <span class="user-photo">
+                      <p>
+                        <img
+                          id="output"
+                          width="110"
+                          style="border-radius: 30%"
+                        />
+                      </p>
+                    </span>
+                  </div>
+                  <div class="general-information">
+                    <div class="card-element card-name">
+                      <span class="card-title">Name:</span>
+                      <span class="card-input" id="cardName"></span>
+                    </div>
+                    <div class="card-element college-name">
+                      <span class="card-title">College Name:</span>
+                      <span class="card-input" id="cardCollegeName"></span>
+                    </div>
+                    <div class="card-element college-name">
+                      <span class="card-title">Location:</span>
+                      <span class="card-input" id="cardLocation"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

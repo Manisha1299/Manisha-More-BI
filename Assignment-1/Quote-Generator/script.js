@@ -29,7 +29,7 @@ const arrayOfQuotes = [
     }
 ];
 function generateQuote() {
-    const random = Number.parseInt(Math.random() * arrayOfQuotes.length + 1);
+    const random = Number.parseInt(Math.random() * arrayOfQuotes.length);
     document.querySelector("#generatedQuote")
         .textContent = `\"${arrayOfQuotes[random].quote}\"`;
     document.querySelector("#AuthorName")

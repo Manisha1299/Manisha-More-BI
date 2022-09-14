@@ -2,49 +2,69 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tip Calculator</title>
-    <link rel="stylesheet" href="style.css">
+   
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
+        integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css" />
 </head>
 
-<body>
-
+<body class="bg-dark">
     <div class="container">
-        <h1>Tip Calculator</h1>
-        <div class="billInput">
-            <span class="currency">$</span>
-            <input type="number" id="num" placeholder="Enter Amount">
-        </div>
+        <div class="row">
+            <div class="col-md-6 mx-auto">
+                <div class="card card-body text-center mt-5">
+                    <h1 class="heading display-5 pb-3 blue">Tip Calculator</h1>
+                    
+                    <form id="tip-form">
+                        <div class="form-group">
+                            <div class="input-group">
+                                <span class="input-group-addon">$</span>
+                                
+                                <input type="number" class="form-control" id="totalBill" placeholder="Total Bill" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group">
+                                <label for="">Tip:</label>
+                               
+                                <input type="range" class="form-control" id="tipInput" value="0" />
+                               
+                                <span class="input-group-addon" id="tipOutput"></span>
+                            </div>
+                        </div>
+                    </form>
+                    <hr/>
+                    
+                    <div id="results" class="pt-4">
+                        <h5>Results</h5>
+                        <div class="form-group">
+                            <div class="input-group">
+                                <span class="input-group-addon">Tip amount $</span>
+                                
+                                <input type="number" class="form-control" id="tipAmount" disabled />
+                            </div>
+                        </div>
 
-
-        <div class="billInput">
-            <label for="tip">Tip:</label>
-            <input type="range" name="range" id="range" min="0" max="100">
-            <span class="rangePercent">%</span>
-        </div>
-
-        <hr>
-
-        <h3>Results</h3>
-        <div class="result-prim">
-            <div class="tip">
-                <span class="border">Tip Amount :</span>
-                <hr>
-                <span class="tipamt"></span>
+                        <div class="form-group">
+                            <div class="input-group">
+                                <span class="input-group-addon">Total Bill  $</span>
+                                
+                                <input type="number" class="form-control" id="totalBillWithTip" disabled />
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="amt">
-
-                <span class="border">Total Bill with Tip:</span>
-                <hr>
-                <span class="bill"></span>
-            </div>
-
         </div>
     </div>
+
+
     <script src="script.js"></script>
-        
 </body>
 
 </html>

@@ -1,20 +1,19 @@
-const tip = document.getElementById("range");
-const tit = document.querySelector(".rangePercent");
-const tipamt = document.querySelector(".tipamt");
-const amountTotal = document.querySelector(".bill");
+document.querySelector('#tip-form').onchange = function () {
 
-tip.addEventListener("input", function (event) {
-    
-    let billInput = document.getElementById("num").value;
-    let tipam = event.target.value;
+	const bill = Number(document.querySelector('#totalBill').value);
+	const tip = document.querySelector('#tipInput').value;
+	const tipOutput = document.querySelector('#tipOutput');
+	const tipAmount = document.querySelector('#tipAmount');
+	const totalBillWithTip = document.querySelector('#totalBillWithTip');
+	const results = document.querySelector('#results');
 
-    tit.textContent = `${tipam}`;
-    tipamt.textContent = `${billInput * (tipam / 100).toFixed(2)}%`;
-    console.log(tipam)
-    amountTotal.textContent = tipCalc(parseFloat(billInput), parseFloat(tipam))
-})
+	const tipValue = bill * (tip / 100);
+	const finalBill = bill + tipValue;
 
-function tipCalc(amountTotal, tip) {
-    let tipc = (amountTotal * tip / 100);
-    return tipc + amountTotal;
-}
+	tipAmount.value = tipValue.toFixed(2);
+	totalBillWithTip.value = finalBill.toFixed(2);
+
+
+	tipOutput.innerHTML = `${tip}%`;
+	results.style.display = 'block';
+};

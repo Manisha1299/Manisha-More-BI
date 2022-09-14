@@ -29,7 +29,7 @@ function equalTo() {
 
     for (i = 0; i < num.length; i++) {
 
-        b += num[i];
+        b = b + num[i];
     }
 
     ans = eval(b);
